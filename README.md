@@ -18,7 +18,7 @@ new_york_city.csv: Data for the city of New York, for the same dates.
 
 
 ### Credits
-This project is based on Udacity Project for the Programming for Data Science Nanodegree.
+This project is based on Udacity Project for the [Programming for Data Science Nanodegree](https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104).
 
 To simplify some of the dates and times presentation, the [datetime](https://docs.python.org/3/library/datetime.html) module has been used, as explained in the [this stackoverflow thread](https://stackoverflow.com/questions/775049/how-do-i-convert-seconds-to-hours-minutes-and-seconds)
 
