@@ -110,14 +110,19 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
+    # Calculate most frequent times of travel
+    common_month = df['month'].mode()[0]
+    common_day = df['day_of_week'].mode()[0]
+    common_hour = df['Start Time'].dt.hour.mode()[0]
+
     # display the most common month
-    print('The most common month of travel is: {}.'.format(df['month'].mode()[0]))
+    print(f'The most common month of travel is: {common_month}.')
 
     # display the most common day of week
-    print('The most common day of travel of the week is: {}.'.format(df['day_of_week'].mode()[0]))
+    print(f'The most common day of travel of the week is: {common_day}.')
 
     # display the most common start hour
-    print('The most common start hour of travel is: {}h.'.format(df['Start Time'].dt.hour.mode()[0]))
+    print(f'The most common start hour of travel is: {common_hour}h.')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -129,14 +134,19 @@ def station_stats(df):
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
+    # Calcualte most popular stations and trip
+    popular_start_station = df['Start Station'].mode()[0]
+    popular_end_station = df['End Station'].mode()[0]
+    popular_combination = df['Trip'].mode()[0]
+
     # display most commonly used start station
-    print('\nThe most common start station is: {}.'.format(df['Start Station'].mode()[0]))
+    print(f'The most common start station is: {popular_start_station}.')
 
     # display most commonly used end station
-    print('\nThe most common end station is: {}.'.format(df['End Station'].mode()[0]))
+    print(f'The most common end station is: {popular_end_station}.')
 
     # display most frequent combination of start station and end station trip
-    print('\nThe most common trip (start to end station combination) is: {}.'.format(df['Trip'].mode()[0]))
+    print(f'The most common trip (start to end station combination) is: {popular_combination}.')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -150,7 +160,8 @@ def trip_duration_stats(df):
 
     # display total travel time
     total_travel_time = df['Trip Duration'].sum()
-    # Format it for a more friendly version (https://stackoverflow.com/questions/775049/how-do-i-convert-seconds-to-hours-minutes-and-seconds)
+    # Format it for a more friendly version 
+    # (https://stackoverflow.com/questions/775049/how-do-i-convert-seconds-to-hours-minutes-and-seconds)
     total_travel_time = str(datetime.timedelta(seconds=round(int(total_travel_time))))
     print('\nTotal travel time for the selected range of dates is: {}.'.format(total_travel_time))
 
