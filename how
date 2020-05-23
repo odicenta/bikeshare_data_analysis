@@ -1,0 +1,55 @@
+[33mcommit 03cb150a898e776c30235ccc097399e5f734a559[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: odicenta <odicenta@gmail.com>
+Date:   Sat May 23 00:02:14 2020 +0200
+
+    Main logic complete, need to address issues
+    
+    The main logic is complete, need to be completed.
+    Issue: when dataframe is empty, error is not being handled
+
+[33mcommit 358d257ac50f6a76ea3818eed3e51d7619ddd67d[m
+Author: odicenta <odicenta@gmail.com>
+Date:   Thu May 21 00:40:17 2020 +0200
+
+    Completed all exercises in the exploration notebook
+    
+    Some exploratory analysis and test, and Exercises 1, 2 & 3
+    from the project have been completed.
+    Due to difference of pandas version, day_name() used instead
+    of weekday_name
+
+[33mcommit e5cb4e6ff1cb60d48be1e2248fcb7a1eb55f0bd7[m
+Author: odicenta <odicenta@gmail.com>
+Date:   Wed May 20 01:09:47 2020 +0200
+
+    Added bike_explore notebook companion
+    
+    Notebook added to help with data exploration and analysis
+    previous to writing the program.
+
+[33mcommit edf82e3d390b09f305a7d2269b5b818e2bc6b607[m
+Author: odicenta <odicenta@gmail.com>
+Date:   Sat May 16 23:55:16 2020 +0200
+
+    Add user input logic to the main program
+    
+    Added some additional files to gitignore
+    Part of the input logic is pending
+
+[33mcommit 4987e2bbb4f87618f1a4f9d7e3d7fffa32e80017[m[33m ([m[1;32mdocumentation[m[33m)[m
+Author: odicenta <odicenta@gmail.com>
+Date:   Tue May 12 00:40:29 2020 +0200
+
+    Initial commit with base files (bikeshare.py, readme and gitignore)
+
+[33mcommit b34028e6b29644bd4dca95403681d59f11ca2ac6[m
+Author: odicenta <odicenta@gmail.com>
+Date:   Sun May 10 23:36:36 2020 +0200
+
+    Initial commit and README basic information.
+
+[33mcommit 46a5819dc927e9405b589b41529d76b86d41ec36[m
+Author: Ruchi B <41761551+rbUdacProjects@users.noreply.github.com>
+Date:   Tue Aug 14 15:26:00 2018 -0700
+
+    Create README.md
