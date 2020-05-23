@@ -150,7 +150,8 @@ def trip_duration_stats(df):
 
     # display total travel time
     total_travel_time = df['Trip Duration'].sum()
-    # Format it for a more friendly version (https://stackoverflow.com/questions/775049/how-do-i-convert-seconds-to-hours-minutes-and-seconds)
+    # Format it for a more friendly version 
+    # (https://stackoverflow.com/questions/775049/how-do-i-convert-seconds-to-hours-minutes-and-seconds)
     total_travel_time = str(datetime.timedelta(seconds=round(int(total_travel_time))))
     print('\nTotal travel time for the selected range of dates is: {}.'.format(total_travel_time))
 
